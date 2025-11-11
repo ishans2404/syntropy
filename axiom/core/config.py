@@ -13,6 +13,10 @@ class EffAxNetConfig:
     variant: FrameType = "2d"
     input_shape: Tuple[int, ...] = (128, 128, 3)
     num_classes: int = 2
+    include_top: bool = True
+    classifier_activation: Optional[str] = "softmax"
+    pooling: Optional[Literal["avg", "max"]] = None
+    weights: Optional[str] = None
     name: Optional[str] = None
     extra_kwargs: Dict[str, object] = field(default_factory=dict)
 

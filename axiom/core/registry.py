@@ -1,4 +1,4 @@
-"""Simple registry for model factories keyed by name."""
+"""Registry for model factories keyed by name."""
 
 from __future__ import annotations
 

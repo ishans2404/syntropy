@@ -7,7 +7,7 @@ name = "axiom"
 version = "0.1.0"
 description = "Modular research library for Efficient Axial Networks and future models"
 readme = "README.md"
-license = { text = "MIT" }
+license = { text = "Apache-2.0" }
 authors = [
   { name = "Ishan Singh", email = "ishans2404@gmail.com" }
 ]
