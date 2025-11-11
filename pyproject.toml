@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axiom"
+version = "0.1.0"
+description = "Modular research library for Efficient Axial Networks and future models"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Ishan Singh", email = "ishans2404@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+  "numpy>=1.21"
+]
+
+[project.optional-dependencies]
+tf = ["tensorflow>=2.13.0", "keras>=2.13.0"]
+torch = ["torch>=2.1.0", "torchvision>=0.16.0"]
+
+[project.urls]
+Homepage = "https://github.com/ishans2404/axiom"
+Documentation = "https://github.com/ishans2404/axiom#readme"
+Issues = "https://github.com/ishans2404/axiom/issues"
