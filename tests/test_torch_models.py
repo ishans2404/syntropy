@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from axiom.torch.models import effaxnet_2d, effaxnet_3d
+from syntropy.torch.models import effaxnet_2d, effaxnet_3d
 
 
 def test_torch_model_placeholders_raise():

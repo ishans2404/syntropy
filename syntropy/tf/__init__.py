@@ -1,4 +1,4 @@
-"""TensorFlow implementation namespace for Axiom."""
+"""TensorFlow implementation namespace for Syntropy."""
 
 from . import layers, models, train
 

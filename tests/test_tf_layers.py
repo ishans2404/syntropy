@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import tensorflow as tf
 
-from axiom.tf.layers import AxialAttention2D, ChannelAttention2D, efficient_2d_convblock
+from syntropy.tf.layers import AxialAttention2D, ChannelAttention2D, efficient_2d_convblock
 
 
 def test_axial_attention_2d_preserves_shape():

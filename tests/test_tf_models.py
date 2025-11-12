@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import tensorflow as tf
 
-from axiom.tf.models import EffAxNetV1, effaxnet_2d, effaxnet_3d
+from syntropy.tf.models import EffAxNetV1, effaxnet_2d, effaxnet_3d
 
 
 def test_effaxnet_2d_output_shape():

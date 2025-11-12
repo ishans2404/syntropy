@@ -7,8 +7,8 @@ from typing import Callable, Dict, Literal, Optional, Tuple, Union
 
 from tensorflow import keras  # type: ignore[attr-defined]
 
-from axiom.core.config import EffAxNetConfig
-from axiom.core.registry import ModelRegistry
+from syntropy.core.config import EffAxNetConfig
+from syntropy.core.registry import ModelRegistry
 from . import effaxnet_2d, effaxnet_3d
 
 MODEL_REGISTRY = ModelRegistry()

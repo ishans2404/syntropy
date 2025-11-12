@@ -1,15 +1,15 @@
-# Axiom
+# Syntropy
 
-Axiom is a lightweight research toolkit for experimenting with hybrid convolutional and attention-based neural architectures. The initial release packages both TensorFlow and PyTorch building blocks for Efficient Axial Networks (EffAxNet) with aligned APIs, making it easy to compare implementations across frameworks and prototype new ideas quickly.
+Syntropy is a lightweight research toolkit for experimenting with hybrid convolutional and attention-based neural architectures. The initial release packages both TensorFlow and PyTorch building blocks for Efficient Axial Networks (EffAxNet) with aligned APIs, making it easy to compare implementations across frameworks and prototype new ideas quickly.
 
 ## Installation
 
-Axiom targets Python 3.8+ and ships optional extras for framework-specific dependencies:
+Syntropy targets Python 3.8+ and ships optional extras for framework-specific dependencies:
 
 ```bash
-pip install axiom
-pip install axiom[tf]
-pip install axiom[torch]
+pip install syntropy
+pip install syntropy[tf]
+pip install syntropy[torch]
 ```
 
 The base install depends only on `numpy`. TensorFlow and PyTorch packages are delegated to extras to keep the default footprint small.
@@ -17,7 +17,7 @@ The base install depends only on `numpy`. TensorFlow and PyTorch packages are de
 ## Package Layout
 
 ```
-axiom/
+syntropy/
 ├── core          # Framework-agnostic utilities and registries
 ├── tf            # TensorFlow layers, models, and training loops
 ├── torch         # PyTorch mirrors of the TensorFlow components
@@ -27,7 +27,7 @@ axiom/
 ## Quick Start
 
 ```python
-from axiom.tf.models import effaxnet_2d
+from syntropy.tf.models import effaxnet_2d
 
 model = effaxnet_2d.build_model(input_shape=(128, 128, 3), num_classes=10)
 model.summary()

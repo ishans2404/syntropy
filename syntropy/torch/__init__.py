@@ -1,4 +1,4 @@
-"""PyTorch implementation namespace for Axiom."""
+"""PyTorch implementation namespace for Syntropy."""
 
 from . import layers, models, train
 

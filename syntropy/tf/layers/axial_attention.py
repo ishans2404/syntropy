@@ -19,6 +19,8 @@ class AxialAttention2D(keras.layers.Layer):
         self.num_heads = num_heads
         self.mlp_dim = mlp_dim
         self.dropout_rate = dropout_rate
+        self.layer_norm = keras.layers.LayerNormalization(epsilon=1e-6)
+        self.dropout = keras.layers.Dropout(self.dropout_rate)
 
     def build(self, input_shape):
         channels = input_shape[-1]
@@ -30,10 +32,9 @@ class AxialAttention2D(keras.layers.Layer):
                 f"channels ({self.channels}) must be divisible by num_heads ({self.num_heads})"
             )
         self.head_dim = self.channels // self.num_heads
-        self.layer_norm = keras.layers.LayerNormalization(epsilon=1e-6)
         self.qkv_dense = keras.layers.Dense(self.channels * 3, use_bias=False)
         self.proj_dense = keras.layers.Dense(self.channels, use_bias=False)
-        self.dropout = keras.layers.Dropout(self.dropout_rate)
+        
         super().build(input_shape)
 
     def _reshape_inputs(self, inputs):
@@ -96,6 +97,8 @@ class AxialAttention3D(keras.layers.Layer):
         self.num_heads = num_heads
         self.mlp_dim = mlp_dim
         self.dropout_rate = dropout_rate
+        self.layer_norm = keras.layers.LayerNormalization(epsilon=1e-6)
+        self.dropout = keras.layers.Dropout(self.dropout_rate)
 
     def build(self, input_shape):
         channels = input_shape[-1]
@@ -107,10 +110,8 @@ class AxialAttention3D(keras.layers.Layer):
                 f"channels ({self.channels}) must be divisible by num_heads ({self.num_heads})"
             )
         self.head_dim = self.channels // self.num_heads
-        self.layer_norm = keras.layers.LayerNormalization(epsilon=1e-6)
         self.qkv_dense = keras.layers.Dense(self.channels * 3, use_bias=False)
         self.proj_dense = keras.layers.Dense(self.channels, use_bias=False)
-        self.dropout = keras.layers.Dropout(self.dropout_rate)
         super().build(input_shape)
 
     def call(self, inputs, training=None):

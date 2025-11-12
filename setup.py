@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="axiom",
+    name="syntropy",
     version="0.1.0",
     author="Ishan Singh",
     author_email="ishans2404@gmail.com",
@@ -19,9 +19,9 @@ setup(
     python_requires=">=3.8",
     include_package_data=True,
     license="MIT",
-    url="https://github.com/ishans2404/axiom",
+    url="https://github.com/ishans2404/syntropy",
     project_urls={
-        "Documentation": "https://github.com/ishans2404/axiom#readme",
-        "Issues": "https://github.com/ishans2404/axiom/issues",
+        "Documentation": "https://github.com/ishans2404/syntropy#readme",
+        "Issues": "https://github.com/ishans2404/syntropy/issues",
     },
 )

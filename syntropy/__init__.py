@@ -1,4 +1,4 @@
-"""Top-level package for the Axiom library."""
+"""Top-level package for the Syntropy library."""
 
 from .version import __version__
 

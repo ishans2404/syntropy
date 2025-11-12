@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from axiom.core.utils import compute_spatial_reduction
+from syntropy.core.utils import compute_spatial_reduction
 
 
 def test_compute_spatial_reduction():

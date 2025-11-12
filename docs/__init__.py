@@ -1,1 +1,1 @@
-"""Documentation package for the Axiom project."""
+"""Documentation package for the Syntropy project."""
